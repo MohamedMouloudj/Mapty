@@ -306,10 +306,16 @@ class App {
         document.querySelector(`[data-id='${obj.id}']`).style.display = "none";
         const foundMarker = this.workoutsMarkers.find((el) => el.id === obj.id);
         this.#map.removeLayer(foundMarker.tempMarker)
-        this.workoutsMarkers.pop(foundMarker);
-
-        let n = this.workouts.length;
-        let i = this.workouts.findIndex((workout) => workout === obj)
+        let n,i;
+        n = this.workoutsMarkers.length;
+        i = this.workoutsMarkers.findIndex((marker)=> marker===foundMarker)
+        while (i <= n - 1) {
+            
+            n--;
+            i++;
+        }
+        n = this.workouts.length;
+        i = this.workouts.findIndex((workout) => workout === obj)
         while (i <= n - 1) {
             this.workouts[i] = this.workouts[i + 1];
             this.workouts.pop();
