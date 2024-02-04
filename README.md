@@ -4,7 +4,7 @@ https://mohamedmouloudj.github.io/Mapty/
 This is my firs application using OOP in Javascript.
 the idea of this application is to log user's workout with details, and show the place where he did the workouts on the map.
 
-I built this project with the instructor Jonas Schmedtmann , and I added some features.
+I built this project with the instructor ***Jonas Schmedtmann***, and I added some features.
 
 ## Preview
 ### Desktop
